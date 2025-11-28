@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import images from '../assets/images';
 
 const Hero = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slides = [
-        '/assets/img/hero_slide_1.png',
-        '/assets/img/hero_slide_2.png',
-        '/assets/img/hero_slide_3.png'
+        images.hero.slide1,
+        images.hero.slide2,
+        images.hero.slide3
     ];
 
     useEffect(() => {

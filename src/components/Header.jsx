@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import images from '../assets/images';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ const Header = () => {
             <div className="container">
                 <div className="logo">
                     <a href="#home">
-                        <img src="/assets/img/logo.png" alt="Mastermedic BH Logo" />
+                        <img src={images.logo} alt="Mastermedic BH Logo" />
                     </a>
                 </div>
                 <nav className={isMenuOpen ? 'active' : ''}>

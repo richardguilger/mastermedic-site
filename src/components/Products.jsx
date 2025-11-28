@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ProductCarousel from './ProductCarousel';
+import images from '../assets/images';
 
 const Products = () => {
     return (
@@ -18,7 +19,7 @@ const Products = () => {
                 >
                     <div className="feature-image">
                         <ProductCarousel
-                            images={['/assets/img/eletroterapia_1.jpg', '/assets/img/eletroterapia_2.png']}
+                            images={images.products.eletroterapia}
                             altText="Eletroterapia Intensiva"
                         />
                     </div>
@@ -57,7 +58,7 @@ const Products = () => {
                     </div>
                     <div className="feature-image">
                         <ProductCarousel
-                            images={['/assets/img/cinta_massageadora_new_1.png', '/assets/img/cinta_massageadora_2.png']}
+                            images={images.products.cintaMassageadora}
                             altText="Cinta Massageadora"
                         />
                     </div>
@@ -73,7 +74,7 @@ const Products = () => {
                 >
                     <div className="feature-image">
                         <ProductCarousel
-                            images={['/assets/img/botas_compressao.png', '/assets/img/botas_compressao_2.png']}
+                            images={images.products.botasCompressao}
                             altText="Botas de Compressão"
                         />
                     </div>

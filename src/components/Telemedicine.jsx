@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import images from '../assets/images';
 
 const Telemedicine = () => {
     return (
@@ -39,7 +40,7 @@ const Telemedicine = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                 >
-                    <img src="/assets/img/telemedicina_2.png" alt="Médico em atendimento online" />
+                    <img src={images.telemedicina[1]} alt="Médico em atendimento online" />
                 </motion.div>
             </div>
         </section>
